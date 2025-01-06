@@ -41,4 +41,25 @@ public class Main{
        
     }
 }
+**************************************************************************************************************
+To print any char using an input = 5                                                AB
+output: the character will print like a trianglee                                  ABCD
+import java.util.Scanner;                                                         ABCDEF
+public class Main {
+    public static void main(String[] args)
+    {
+        Scanner scan = new Scanner(System.in);
+        int limit = scan.nextInt();
+        for(int row=1;row<=limit;row++)
+        {
+            char ch='A';
+         for(int col=1;col<=limit-row;col++)
+         System.out.print(" ");
+            
+            for(int col=1;col<=2*row;col++)
+            System.out.print(ch++);
+            System.out.println();
+        }
+    }
     
+}
