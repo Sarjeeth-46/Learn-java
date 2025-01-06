@@ -22,3 +22,23 @@ output
    **
   ****
 ********
+-------------------------------------------------------------------------------------------------------
+2. To print the consuctive no
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args)
+    {
+        Scanner scan = new Scanner(System.in);
+        int limit = scan.nextInt();
+        for(int row=1;row<=limit;row++)
+        {
+        for(int col=1;col<=limit;col++)
+        
+            System.out.print(row);
+            System.out.println();
+        
+        }
+       
+    }
+}
+    
